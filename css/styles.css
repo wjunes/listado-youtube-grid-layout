@@ -125,10 +125,6 @@ body{
     color: black;
 }
 
-.item:hover{
-    cursor: pointer;
-}
-
 
 .content{
     display: grid;
