@@ -1,0 +1,180 @@
+
+
+body{
+    padding: 1rem;
+}
+*{
+    margin:0;
+    
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    margin: 0 auto;
+    padding: 8px;
+    gap: 5px;
+    border: 2px solid black;
+    width: 1460px;
+    height: 960px;
+    grid-template-columns: 220px repeat(4, 1fr);
+    grid-template-rows: 60px repeat(3, 1fr);
+    grid-template-areas: "navbar navbar navbar navbar navbar" 
+    "menu content content content content" "menu content content content content"
+    "menu content content content content";
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    grid-area: navbar;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    
+}
+
+
+.menu-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 240px;
+}
+
+.minmenu{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.youtube-logo{
+    width: 150px;
+    height: 30px;
+    
+    
+}
+
+.rectangle{
+    display: flex;
+    padding-left: 4px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 42px;
+    width: 340px;
+    /* border: 1px solid #e3e3e3; */
+    
+}
+
+.rectangle input{
+    width: 294px;
+    height: 39px;
+    border: 1px solid #e3e3e3; 
+    border-right: none;
+}
+
+.search-btn{
+    background-color: #e3e3e3;
+    height: 39px;
+    width: 40px;
+    background-color: #e3e3e3;
+} 
+
+.search-btn:hover{
+    cursor: pointer;
+}
+
+.menu-icons{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+
+.avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    grid-area: menu;
+    width: 230px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 1rem 1rem;
+    padding: 3px;
+    height: 30px;
+}
+
+.item p{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #f4f3f3;
+    grid-area: content;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2pxpx;
+
+}
+
+.item-content img{
+    width: 250px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.infos{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: "icon h3" "icon p" "icon p";
+    padding: 5px;
+    align-content: flex-start;
+    row-gap: 6px;
+    
+}
+
+.infos img{
+    grid-area: icon ;
+    width: 40px;
+    height: 40px;
+}
+.infos h3{
+    font-size: 16px;
+    margin: 2px;
+}
+.infos p{
+    margin: 0;
+}
