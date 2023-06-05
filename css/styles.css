@@ -14,7 +14,6 @@ body{
     margin: 0 auto;
     padding: 8px;
     gap: 5px;
-    border: 2px solid black;
     width: 1460px;
     height: 960px;
     grid-template-columns: 220px repeat(4, 1fr);
