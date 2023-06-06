@@ -14,8 +14,8 @@ body{
     margin: 0 auto;
     padding: 8px;
     gap: 5px;
-    width: 1460px;
-    height: 960px;
+    width: 85%;
+    /* height: 960px; */
     grid-template-columns: 220px repeat(4, 1fr);
     grid-template-rows: 60px repeat(3, 1fr);
     grid-template-areas: "navbar navbar navbar navbar navbar" 
@@ -140,12 +140,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2pxpx;
+    padding: 2px;
 
 }
 
 .item-content img{
-    width: 250px;
+    width: 100%;
     height: 140px;
     border-radius: 10px;
 }
@@ -157,19 +157,47 @@ body{
     grid-template-areas: "icon h3" "icon p" "icon p";
     padding: 5px;
     align-content: flex-start;
-    row-gap: 6px;
+    gap: 6px;
     
 }
 
 .infos img{
     grid-area: icon ;
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
 }
 .infos h3{
-    font-size: 16px;
+    font-size: 14px;
     margin: 2px;
 }
 .infos p{
+    font-size: 12px;
     margin: 0;
 }
+
+            /*RESPONSIVIDAD*/
+
+@media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .menu, content {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .content {
+       display: flex;
+       flex-direction: column;
+       padding:  16px ;
+    }
+
+  }
