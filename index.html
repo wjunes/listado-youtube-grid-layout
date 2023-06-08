@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsiv.css">
     <title>Listado youtube grid layout</title>
 </head>
 <body>
     <div class="container">
+
+            <!--INICIO DE NAVBAR-->
+
         <header class="navbar">
-            <div class="menu-left">
-                <img src="./img/menu.png" alt="Menu" class="minmenu"  width="56">
-            <a href="#">
-                <img src="./img/youtube 1.svg" alt="Youtube logo" class="youtube-logo">
-            </a>
+            <div class="menu-icon">
+                <a href="https://www.youtube.com/@diomakethechange"><img  class="menu-sandw" src="./img/menu.png" alt="Menu"  width="56"></a>
+                <a href="https://www.youtube.com/@diomakethechange">
+                    
+                    <img src="./img/youtube 1.svg" alt="Youtube logo" class="youtube-logo">
+                </a>
             </div>
-            <div class="rectangle" >
+            <div class="search" >
                 <input type="text" placeholder="Digite sua busca"> 
                 <button type="submit" class="search-btn" >
                     <img src="./img/search.png">
@@ -37,76 +42,86 @@
                 </a>
             </div>
         </header>
-        <aside class="menu">
-            <div class="item">
-                <a href="https://www.youtube.com/@diomakethechange" target="_blank">
-                    <img src="./img/menu/inicio.svg" alt="" width="20">
-                </a>
-                <p>Inicio</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/shorts/kDAFESFGRw8" target="_blank">
-                    <img src="./img/menu/shorts.svg" alt="" width="20">
-                </a>
-                <p>Shorts</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/feed/subscriptions" target="_blank">
-                    <img src="./img/menu/subscription.svg" alt="" width="20">
-                </a>
-                <p>suscrito</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/feed/library" target="_blank">
-                    <img src="./img/menu/library.svg" alt="" width="20">
-                </a>
-                <p>Biblioteca</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/feed/history" target="_blank">
-                    <img src="./img/menu/historial.svg" alt="" width="20">
-                </a>
-                <p>historial</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank">
-                    <img src="./img/menu/music.svg" alt="" width="20">
-                </a>
-                <p>youtube music</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/playlist?list=LL" target="_blank">
-                    <img src="./img/menu/like.svg" alt="" width="20">
-                </a>
-                <p>Videos que gostei</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/playlist?list=WL" target="_blank">
-                    <img src="./img/menu/clok.svg" alt="" width="20">
-                </a>
-                <p>assistir mais tarde</p>
-            </div>
 
-            <div class="item">
-                <a href="https://www.youtube.com/results?search_query=peliculas" target="_blank">
-                    <img src="./img/menu/movie.svg" alt="" width="20">
+            <!--FIN DE NAVBAR-->
+
+             <!--INICIO DEL MENU LATERAL-->
+ 
+        <aside class="menu-content">
+
+            <ul class="menu">
+                <li>
+                    <a href="https://www.youtube.com/@diomakethechange" target="_blank">
+                        <img src="./img/menu/inicio.svg" alt="" width="20">
+                        inicio
+                    </a>                           
+            </li>
+                <li>
+                    <a href="https://www.youtube.com/shorts/kDAFESFGRw8" target="_blank">
+                        <img src="./img/menu/shorts.svg" alt="" width="20">
+                        Shorts
+                    </a>  
+                </li>
+                <li> 
+                    <a href="https://www.youtube.com/feed/subscriptions" target="_blank">
+                        <img src="./img/menu/subscription.svg" alt="" width="20">
+                        Suscrito
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/feed/library" target="_blank">
+                        <img src="./img/menu/library.svg" alt="" width="20">
+                        Biblioteca
+                    </a>  
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/feed/history" target="_blank">
+                        <img src="./img/menu/historial.svg" alt="" width="20">
+                        Historial
+                    </a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank">
+                        <img src="./img/menu/music.svg" alt="" width="20">
+                        Youtube music
                 </a>
-                <p>filmes</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg" target="_blank">
-                    <img src="./img/menu/know.svg" alt="" width="20">
-                </a>
-                <p>aprender</p>
-            </div>
-            <div class="item">
-                <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" target="_blank">
-                    <img src="./img/menu/sports.svg" alt="" width="20">
-                </a>
-                <p>esportes</p>
-            </div>
-        
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/playlist?list=LL" target="_blank">
+                    <img src="./img/menu/like.svg" alt="" width="20">
+                    Videos que gostei
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/playlist?list=WL" target="_blank">
+                    <img src="./img/menu/clok.svg" alt="" width="20">
+                    Ver Depois
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/results?search_query=peliculas" target="_blank">
+                        <img src="./img/menu/movie.svg" alt="" width="20">
+                        Filmes
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg" target="_blank">
+                        <img src="./img/menu/know.svg" alt="" width="20">
+                        Aprender
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" target="_blank">
+                        <img src="./img/menu/sports.svg" alt="" width="20">
+                        Esportes
+                    </a>
+                </li>
+            </ul>  
         </aside>
+
+            <!--FIN DEL MENU LATERAL-->
+
+            <!--INICIO DEL CONTENIDO DE LA LISTA DE VIDEOS-->
+
         <main class="content">
             <div class="item-content">
                 <a href="https://youtu.be/0kpfMxtX7M4" target="_blank">
@@ -249,7 +264,8 @@
 
         </main>
 
+            <!--FIN DEL CONTENIDO DE LA LISTA DE VIDEOS-->
     </div>
-    
+    <script src="/JS/main.js"></script>
 </body>
 </html>
